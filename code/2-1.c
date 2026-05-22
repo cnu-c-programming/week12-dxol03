@@ -8,10 +8,14 @@ int main(int argc, const char* argv[], const char* envp[]) {
         char name[10] = {0};
         int score = 0;
         scanf("%s",name);
-        if(strcmp(name,"quit") == 0) break;
+        if(strcmp(name,"quit") == 0)
+            break;
         scanf("%d",&score);
 
         fprintf(fp,"%s %d\n",name,score);
+        
+    }
+    fclose(fp);
     return 0;
 }
 
